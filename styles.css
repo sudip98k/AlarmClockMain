@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(217, 222, 240);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.alarm{
+    border: 4px solid #2E94E3;
+    border-radius: 8px;
+}
+
+.datetime{
+    color: #fff;
+    background: #29292aad;
+    font-family: "Segoe UI", sans-serif;
+    width: 350px;
+    padding: 14px 13px;
+    transition: 0.5s;
+    transition-property: background,box-shadow;
+}
+
+/* .datetime:hover{
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+    border-radius: 5px;
+} */
+
+/* .date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+} */
+
+.time{
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    max-width: 0 8px;
+    font-weight: 580;
+    text-align: center;
+}
+
+.time span:last-child{
+    background: #2E94E3;
+    font-size: 35px;
+    font-weight: 580;
+    text-transform: uppercase;
+    margin-top: 13px;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+hr{
+    border: 2px solid #2E94E3;
+    margin: 20px auto;
+}
+
+.setAlarm{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.column select{
+    background: #101e1e;
+    color: #fff;
+    text-align: center;
+    padding: 8px 5px;
+    border: 2px solid #2E94E3;
+    border-radius: 18px;
+}
+
+
+#btn-setAlarm, .btn-delete, #stopAlarm{
+    padding: 6px;
+    color: #fff;
+    background: #2E94E3;
+    border: 1px solid #2E94E3;
+    border-radius: 19px;
+}
+
+#stopAlarm{
+    visibility: hidden;
+    width: 100px;
+    margin: 0 34%;
+}
+
+.btn-delete{
+    margin-left: 50px;
+}
+
+#btn-setAlarm:hover, .btn-delete:hover, #stopAlarm:hover{
+    cursor: pointer;
+    background: #181919;
+    box-shadow: 0 0 30px #2b2c2d;
+}
+
+h3{
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.alarmList{
+    color: #fff;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alarmLog{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+}
